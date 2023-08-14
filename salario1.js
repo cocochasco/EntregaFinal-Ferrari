@@ -14,9 +14,6 @@ if (mes === 01 || mes === 03 || mes === 05 || mes === 07 || mes === 08 || mes ==
     alert("Elige una opcion correcta!")
 }
 
-console.log (mes)
-console.log (diasDelMes)
-
 // Procesamiento de datos
 let diasTrabajados = 0;
 for (let dias = 1; dias <= diasDelMes; dias++) {
@@ -27,7 +24,6 @@ for (let dias = 1; dias <= diasDelMes; dias++) {
     }
     
 }
-console.log(diasTrabajados)
 
 // Salida de datos
 alert("Este mes has trabajado " + diasTrabajados + " dias!!");
