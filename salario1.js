@@ -17,9 +17,9 @@ if (mes === 01 || mes === 03 || mes === 05 || mes === 07 || mes === 08 || mes ==
 // Procesamiento de datos
 let diasTrabajados = 0;
 for (let dias = 1; dias <= diasDelMes; dias++) {
-    let respuesta = prompt("Trabajaste el " + dias + "/" + mes + "?");
+    let respuesta = prompt("Trabajaste el " + dias + "/" + mes + "? (Responder si o no)");
 
-    if (respuesta === "si") {
+    if (respuesta === "si" || "Si" || "SI") {
         diasTrabajados ++;
     }
     
@@ -36,7 +36,7 @@ function calcularSalario (horasDiarias, precioHora) {
 
 // Entrada de datos
 const horasDiarias = parseFloat(prompt("Cuantas horas trabajas por dia?"));
-const precioHora = parseFloat(prompt("Cuanto te pagan la hora?"))
+const precioHora = parseFloat(prompt("Cuanto cobras por hora?"))
 
 // Procesamiento de datos
 const salario = calcularSalario(horasDiarias, precioHora);
