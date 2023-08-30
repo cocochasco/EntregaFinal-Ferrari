@@ -63,3 +63,14 @@ for (const i of horasTrabajadas) { //Para cada indice de horasTrabajas
 alert("Este mes has trabajado " + totalHorasMes + " horas!")//Muestro en alert la suma de horas trabajadas en el mes.
 
 
+//-----------INGRESO DE DATOS---------
+const precioHora = parseFloat(prompt("Cuanto cobras por hora?"))
+
+//----------PROCESAMIENTO DE DATOS---------
+function calcularSalario (horas, precio) { //Creo funcion para calcular salario
+    const salario = horas * precio;
+    return salario;//Le digo que me devuelva el resultado de salario
+}
+
+//----------SALIDA DE DATOS--------
+alert ("Tu salario será de $" + calcularSalario(totalHorasMes, precioHora ))
