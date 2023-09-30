@@ -4,10 +4,80 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Salario</title>
-    <script src="salario2.js"></script> 
+    <title>Calculadora de Salario</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdn.jsdelivr.net/npm/luxon@3.4.3/build/global/luxon.min.js"></script>
+    
 </head>
 <body>
-  
+ 
+    <main id="main">
+
+        <h1>Cualculadora de Salario</h1>
+
+        <br>
+
+        <form id="formInformacion" class="formulario" action="">
+            <h4>Informacion necesaria:</h4>
+            <h4>Cuanto cobras por hora?</h4><input type="number" class="formulario__input"  id="inputPrecioHora" required>
+            <button id="confirmarPrecioHora">Ok</button>
+            <button id="btnModificarPrecioHora">Modificar</button>
+        </form>
+        <form id="registroHoras" class="formulario" action="">
+            <h4>Ingresá nueva jornada trabajada:</h4>
+            <label for="inputFecha">Fecha: </label><input type="date" id="inputFecha" class="formulario__input" required>
+            <label for="inputHoraEntrada">Hora de entrada: </label><input type="time" id="inputHoraEntrada" class="formulario__input" required>
+            <label for="inputHoraSalida">Hora de entrada: </label><input type="time" id="inputHoraSalida" class="formulario__input" required>
+          
+            
+            <input class="formulario__input" type="submit" value="Enviar">
+
+        </form>
+        
+        <br>
+
+        <h2>Estadisticas: </h2>
+        <h3>Este mes he trabajado: </h3>
+        <div id="horasMensuales">
+            <p id="pHorasSinCargar">Aun no has cargado tus horas!</p>
+        </div>
+        <h3>Salario al momento:</h3>
+        <div id="salarioMensual">
+            <p id="pSalarioSinCargar">Aun no has cargado tus horas!</p>
+        </div> <br>
+        
+
+        <table id="tablaResumen" style="display: none;" >
+            <thead>
+                <th>Resumen Mensual</th>
+            </thead>
+            <thead>
+                <th>Fecha</th>
+                <th>Horas trabajadas</th>
+            </thead>
+            <tbody id="tBody">
+
+            </tbody>
+        </table>
+        <!-- <div class="resumen">
+            <div class="resumen__div">
+                <h3 class="resumen__h3">Fecha</h3> 
+                <div id="resumenMensualFecha" class="resumen__div__div">
+                    
+                </div>
+            </div>
+
+            <div class="resumen__div">
+                <h3 class="resumen__h3">Horas</h3> 
+                <div id="resumenMensualHoras" class="resumen__div__div">    
+                </div>
+            </div>
+        </div> -->
+
+    </main>
+
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script src="https://cdn.jsdelivr.net/npm/luxon@3.4.3/build/global/luxon.min.js"></script>
+    <script src="index.js"></script>
 </body>
 </html>

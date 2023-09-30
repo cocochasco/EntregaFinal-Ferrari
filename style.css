@@ -1,0 +1,59 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 62.5%;
+}
+ 
+/********/
+
+body {
+    font-size: 1.4rem;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif ;
+    color: black;
+}
+
+/*+******/
+
+
+main {
+    width: 100vw;
+    height: 75vh;
+    
+}
+
+.formulario {
+    width: 100%;
+    height: auto;
+}
+
+.formulario__input {
+    padding: 1rem;
+    display: flex;
+    margin: .5rem;
+}
+
+.resumen {
+   display: flex;
+}
+
+
+.resumen__h3{
+    margin: 1rem;
+   
+}
+
+.resumen__div {
+    padding: 1rem;
+    border: .1rem, solid, black;
+}
+
+.coco {
+    color: aqua;
+}
+
+/*+******/
+
