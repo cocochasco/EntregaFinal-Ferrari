@@ -18,42 +18,93 @@ body {
 
 /*+******/
 
+header {
+    height: 10vw;
+    width: 100vw;
+    
+    color: white;
+}
 
 main {
     width: 100vw;
     height: 75vh;
-    
+}
+
+main > *{
+    margin: 1rem;
+    padding: 1rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .formulario {
     width: 100%;
     height: auto;
+    display: flex;
+    font-size: 1.5rem;
 }
 
+.formulario > * {
+    margin: 1rem;
+    padding: 1rem;
+}
 .formulario__input {
     padding: 1rem;
-    display: flex;
+   
     margin: .5rem;
 }
 
-.resumen {
-   display: flex;
-}
-
-
-.resumen__h3{
-    margin: 1rem;
+.div__p > * {
+    font-size: 1.6rem;
+    margin-bottom: 1.3rem;
    
 }
 
-.resumen__div {
+.div__p {
+    font-size: 1.6rem;
+    margin-bottom: 1.3rem;
+  
+}
+
+#parrafoPrecioHora {
+    flex: 1;
+    color: red; 
+}
+
+table {
+    flex-direction: column;
+}
+
+thead {
+    font-size: 1.4rem;
+    width: 40rem;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+thead th {
     padding: 1rem;
-    border: .1rem, solid, black;
+    margin: 1rem;
 }
 
-.coco {
-    color: aqua;
+#tBody {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: column;
+    width: 50rem;
 }
 
-/*+******/
 
+
+.td {
+    padding: 1rem;
+    font-size: 1.4rem;
+    vertical-align: middle;
+}
+
+.resumen {
+    font-size: 1.9rem;
+    color: green;
+}
